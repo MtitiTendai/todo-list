@@ -3,23 +3,23 @@
 A simple single-page To-Do application built with React, TypeScript, and TailwindCSS.
 This project demonstrates frontend skills such as component design, state management, API integration (mock API), and responsive UI.
 
-Features
+## Features
 
-## a. Display a list of To-Do items (title, description, completion state)
+ a. Display a list of To-Do items (title, description, completion state)
 
-## b. Add new To-Dos
+ b. Add new To-Dos
 
-## c. Edit To-Dos
+ c. Edit To-Dos
 
-## d. Mark To-Dos as complete/incomplete
+ d. Mark To-Dos as complete/incomplete
 
-## e. Delete To-Do's
+ e. Delete To-Do's
 
-## f. Simulated API calls (GET, POST, PUT, DELETE) with loading states & error handling
+ f. Simulated API calls (GET, POST, PUT, DELETE) with loading states & error handling
 
-## g. Responsive design with TailwindCSS
+ g. Responsive design with TailwindCSS
 
-## h. Strict TypeScript typing (import type used across project)
+ h. Strict TypeScript typing (import type used across project)
 
 Project Structure
 src/
