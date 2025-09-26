@@ -33,22 +33,22 @@ src/ <br>
 
 ## Steps in Configuring the project
 
-1.) Creating vite project - Initialize a new React + TypeScript project using Vite
-    command - npm create vite@latest todo-app
+1.) Creating vite project - Initialize a new React + TypeScript project using Vite <br>
+    command - npm create vite@latest todo-app <br>
     
-2.) Installing dependencies - Install all required project dependencies
-    command - npm install
+2.) Installing dependencies - Install all required project dependencies <br>
+    command - npm install <br>
 
-3.) Installing and configuring tailwindcss - Install TailwindCSS and its peer dependencies, then initialize config files
-    command - npm install -D tailwindcss postcss autoprefixer
-              npx tailwindcss init -p
+3.) Installing and configuring tailwindcss - Install TailwindCSS and its peer dependencies, then initialize config files <br>
+        command - npm install -D tailwindcss postcss autoprefixer <br>
+                -  npx tailwindcss init -p <br>
 
-    Update tailwind.config.cjs - content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    Update tailwind.config.cjs - content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], <br>
 
-   Add Tailwind directives to src/index.css
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+    Add Tailwind directives to src/index.css <br>
+      @tailwind base; <br>
+      @tailwind components; <br> 
+      @tailwind utilities; <br>
 
 
 4.) Run the development server - Start the dev server and open in browser (default http://localhost:5173/)
