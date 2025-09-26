@@ -22,16 +22,16 @@ This project demonstrates frontend skills such as component design, state manage
  h. Strict TypeScript typing (import type used across project)
 
 ## Project Structure <br>
-src/
- ├─ api/             # Mock API functions (fetch, add, update, delete)
- ├─ components/      # Reusable UI components
- ├─ pages/           # Page components (Home)
- ├─ types/           # TypeScript interfaces
- ├─ App.tsx          # Root component
- ├─ main.tsx         # Entry point
- └─ index.css 
+src/ <br>
+ ├─ api/             # Mock API functions (fetch, add, update, delete) <br>
+ ├─ components/      # Reusable UI components <br>
+ ├─ pages/           # Page components (Home) <br>
+ ├─ types/           # TypeScript interfaces <br>
+ ├─ App.tsx          # Root component <br>
+ ├─ main.tsx         # Entry point <br>
+ └─ index.css <br>
 
- Steps in Configuring the project
+## Steps in Configuring the project
 
 1.) Creating vite project - Initialize a new React + TypeScript project using Vite
     command - npm create vite@latest todo-app
@@ -56,5 +56,5 @@ src/
 
 
 
-      // Alternatively, use this for stricter rules
+     
      
