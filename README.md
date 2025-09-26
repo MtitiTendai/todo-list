@@ -5,21 +5,21 @@ This project demonstrates frontend skills such as component design, state manage
 
 Features
 
-## Display a list of To-Do items (title, description, completion state)
+## a. Display a list of To-Do items (title, description, completion state)
 
-## Add new To-Dos
+## b. Add new To-Dos
 
-## Edit To-Dos
+## c. Edit To-Dos
 
-## Mark To-Dos as complete/incomplete
+## d. Mark To-Dos as complete/incomplete
 
-## Delete To-Do's
+## e. Delete To-Do's
 
-## Simulated API calls (GET, POST, PUT, DELETE) with loading states & error handling
+## f. Simulated API calls (GET, POST, PUT, DELETE) with loading states & error handling
 
-## Responsive design with TailwindCSS
+## g. Responsive design with TailwindCSS
 
-## Strict TypeScript typing (import type used across project)
+## h. Strict TypeScript typing (import type used across project)
 
 Project Structure
 src/
