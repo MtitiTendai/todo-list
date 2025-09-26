@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# React To-Do App (TypeScript + TailwindCSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple single-page To-Do application built with React, TypeScript, and TailwindCSS.
+This project demonstrates frontend skills such as component design, state management, API integration (mock API), and responsive UI.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Display a list of To-Do items (title, description, completion state)
 
-## React Compiler
+## Add new To-Dos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Edit To-Dos
 
-## Expanding the ESLint configuration
+## Mark To-Dos as complete/incomplete
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Delete To-Do's
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Simulated API calls (GET, POST, PUT, DELETE) with loading states & error handling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
+## Responsive design with TailwindCSS
+
+## Strict TypeScript typing (import type used across project)
+
+Project Structure
+src/
+ ├─ api/             # Mock API functions (fetch, add, update, delete)
+ ├─ components/      # Reusable UI components
+ ├─ pages/           # Page components (Home)
+ ├─ types/           # TypeScript interfaces
+ ├─ App.tsx          # Root component
+ ├─ main.tsx         # Entry point
+ └─ index.css 
+
+ Steps in Configuring the project
+
+1.) Creating vite project - Initialize a new React + TypeScript project using Vite
+    command - npm create vite@latest todo-app
+    
+2.) Installing dependencies - Install all required project dependencies
+    command - npm install
+
+3.) Installing and configuring tailwindcss - Install TailwindCSS and its peer dependencies, then initialize config files
+    command - npm install -D tailwindcss postcss autoprefixer
+              npx tailwindcss init -p
+
+    Update tailwind.config.cjs - content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
+   Add Tailwind directives to src/index.css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+
+4.) Run the development server - Start the dev server and open in browser (default http://localhost:5173/)
+   command - npm run dev
+
+
+
       // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+     
