@@ -21,7 +21,7 @@ This project demonstrates frontend skills such as component design, state manage
 
  h. Strict TypeScript typing (import type used across project)
 
-Project Structure
+## Project Structure <br>
 src/
  ├─ api/             # Mock API functions (fetch, add, update, delete)
  ├─ components/      # Reusable UI components
